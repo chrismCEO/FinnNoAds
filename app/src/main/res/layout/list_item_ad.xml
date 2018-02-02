@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/adImage_list_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:contentDescription="@string/list_item_ad_content_description"
+        android:src="@drawable/example_image"
+        android:layout_gravity="start|top"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/ad_location_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_location_example"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:paddingBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/ad_title_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_title_example"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_price_example"
+            android:id="@+id/ad_price_list_item"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ad_favorite"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/ad_favorite_content_desc"
+        android:src="@mipmap/ic_favorite_black_24dp"
+        android:layout_gravity="start"
+        android:padding="4dp"/>
+
+</LinearLayout>

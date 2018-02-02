@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Finn.no Ads</string>
+    <string name="app_name_no_finn">Ads</string>
+    <string name="no_internet_text">Connect to the internet to load up ads or favorite them to see them offline</string>
+    <string name="no_data_text">No data found!</string>
+    <string name="list_item_ad_content_description">Image for this ad</string>
+    <string name="ad_title_example">Ad title</string>
+    <string name="ad_location_example">Ad location</string>
+    <string name="ad_price_example">NOK 199</string>
+    <string name="ad_favorite_content_desc">Click to favorite an ad</string>
+    <string name="toggle_favorites_text">Show favorites</string>
+    <string name="favorite_toggle_content_desc">Use this to toggle favorites on and off</string>
 </resources>
