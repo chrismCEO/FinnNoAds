@@ -13,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chrismsolutions.finnnoads.data.AdUtils;
 import com.chrismsolutions.finnnoads.data.DownloadImageTask;
 
 import java.text.NumberFormat;

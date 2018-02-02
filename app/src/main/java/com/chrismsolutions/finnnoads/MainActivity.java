@@ -5,10 +5,10 @@ import android.content.Context;
 import android.content.Loader;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onRestoreInstanceState(savedInstanceState);
         loadedAds = (ArrayList<FinnAd>)savedInstanceState.getSerializable(LOADED_ADS);
-        showLoadedAds = true;//savedInstanceState.getBoolean(SHOW_LOADED_ADS);
+        showLoadedAds = true;
 
         favoriteAds = (ArrayList<FinnAd>)savedInstanceState.getSerializable(FAVORITE_ADS);
         showFavorites = savedInstanceState.getBoolean(SHOW_FAVORITE_ADS);
@@ -248,7 +248,6 @@ public class MainActivity extends AppCompatActivity
     protected void onSaveInstanceState(Bundle outState)
     {
         outState.putSerializable(LOADED_ADS, loadedAds);
-        //outState.putBoolean(SHOW_LOADED_ADS, showLoadedAds);
         outState.putSerializable(FAVORITE_ADS, favoriteAds);
         outState.putBoolean(SHOW_FAVORITE_ADS, showFavorites);
         super.onSaveInstanceState(outState);

@@ -1,11 +1,8 @@
 package com.chrismsolutions.finnnoads;
 
 import android.graphics.Bitmap;
-import android.os.Parcel;
-import android.os.Parcelable;
 
 import java.io.Serializable;
-import java.net.URL;
 
 /**
  * Created by Christian Myrvold on 02.02.2018.

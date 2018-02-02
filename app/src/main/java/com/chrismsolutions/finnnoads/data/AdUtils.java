@@ -13,8 +13,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -24,9 +22,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.InvalidPropertiesFormatException;
-import java.util.List;
 
 /**
  * Created by Christian Myrvold on 02.02.2018.
@@ -54,7 +49,7 @@ public class AdUtils
      * Connect to the URL and parse the JSON response
      * @return
      */
-    public static ArrayList<FinnAd> fetchJSONData()
+    static ArrayList<FinnAd> fetchJSONData()
     {
         ArrayList<FinnAd> finnAds = new ArrayList<>();
         URL url = createURL();
